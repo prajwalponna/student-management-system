@@ -26,7 +26,8 @@ import com.project.studentmanagementsystem.repository.StudentRepository;
 public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
-
+    
+    // Get All Student Details
     @GetMapping("/students")
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
